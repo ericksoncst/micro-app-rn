@@ -13,6 +13,8 @@
     "run:host:android": "yarn workspace host run android",
     "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:8083 tcp:8083 && adb reverse tcp:8084 tcp:8084",
     "pods": "yarn workspaces foreach run pods",
+    "bundle:ios": "yarn workspaces foreach run bundle:ios",
+    "bundle:android": "yarn workspaces foreach run bundle:android",
     "start:host": "yarn workspace host run start",
     "start:cards": "yarn workspace cards run start",
     "start:account": "yarn workspace account run start",
