@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
+  "workspaces": [
+    "host",
+    "account",
+    "cards"
+  ],
   "scripts": {
-    "bootstrap": "yarn --cwd account && yarn --cwd cards && yarn --cwd host",
-    "pod-install": "cd account/ios/ && pod install && cd ../../cards/ios/ && pod install && cd ../../host/ios && pod install",
-    "start:account": "yarn --cwd account start",
-    "start:cards": "yarn --cwd cards start",
-    "start:host": "yarn --cwd host start",
-    "run:host:ios": "yarn --cwd host ios",
-    "run:host:android": "yarn --cwd host android",
+    "run:host:ios": "yarn workspace host run ios",
+    "run:host:android": "yarn workspace host run android",
     "adbreverse": "adb reverse tcp:3000 tcp:3000 && adb reverse tcp:8081 tcp:8081 && adb reverse tcp:8083 tcp:8083 && adb reverse tcp:8084 tcp:8084",
+    "pods": "yarn workspaces foreach run pods",
+    "start:host": "yarn workspace host run start",
+    "start:cards": "yarn workspace cards run start",
+    "start:account": "yarn workspace account run start",
     "start": "concurrently -P 'yarn:start:*(!standalone) {1}'"
-
   },
+  "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "concurrently": "^7.6.0"
   }

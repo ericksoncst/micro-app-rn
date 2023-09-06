@@ -2,12 +2,16 @@
   "name": "cards",
   "version": "0.0.1",
   "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native webpack-start --port 8084",
     "bundle": "react-native webpack-bundle",
+    "pods": "(cd ios && bundle install && bundle exec pod install)",
     "test": "jest"
   },
   "dependencies": {
