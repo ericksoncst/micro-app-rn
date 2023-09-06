@@ -16,7 +16,7 @@
     "start:host": "yarn workspace host run start",
     "start:cards": "yarn workspace cards run start",
     "start:account": "yarn workspace account run start",
-    "start": "concurrently -P 'yarn:start:*(!standalone) {1}'"
+    "start": "concurrently -P 'yarn:start:*'"
   },
   "packageManager": "yarn@3.2.1",
   "devDependencies": {
