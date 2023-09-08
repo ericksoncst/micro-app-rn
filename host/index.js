@@ -5,7 +5,7 @@
 import {AppRegistry, Platform} from 'react-native';
 import {ScriptManager, Script, Federated} from '@callstack/repack/client';
 import {name as appName} from './app.json';
-import App from './App';
+import App from './src/App';
 
 const resolveURL = Federated.createURLResolver({
   containers: {
