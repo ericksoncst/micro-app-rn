@@ -9,7 +9,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native webpack-start",
+    "start": "react-native webpack-start --port 8081",
     "pods": "(cd ios && bundle install && bundle exec pod install)",
     "bundle:ios": "react-native webpack-bundle --platform ios --entry-file index.js --dev false",
     "bundle:android": "react-native webpack-bundle --platform android --entry-file index.js --dev false",

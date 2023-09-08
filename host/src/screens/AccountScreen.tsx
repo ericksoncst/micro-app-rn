@@ -5,7 +5,7 @@ import { Federated } from '@callstack/repack/client';
 
 const Account = React.lazy(() => Federated.importModule('account', './App'))
 
-function AccountScreen(props) {
+function AccountScreen(props: { navigation: {}, route: {}}) {
     return (
         <SafeAreaView>
             <React.Suspense

@@ -5,12 +5,12 @@ import { Federated } from '@callstack/repack/client';
 
 const Cards = React.lazy(() => Federated.importModule('cards', './App'))
 
-function CardsScreen() {
+function CardsScreen(props) {
     return (
         <SafeAreaView>
             <React.Suspense
             fallback={<Text>Loading cards...</Text>}>
-                 <Cards />
+                 <Cards {...props} />
             </React.Suspense>
         </SafeAreaView>
     )
