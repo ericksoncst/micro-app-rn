@@ -2496,6 +2496,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-masked-view/masked-view@npm:^0.2.9":
+  version: 0.2.9
+  resolution: "@react-native-masked-view/masked-view@npm:0.2.9"
+  peerDependencies:
+    react: ">=16"
+    react-native: ">=0.57"
+  checksum: 7eb6c370f000f630bf13ce9177964c430eda7057eb7036460d4e5d2bf2153ebd6a29bec0fb8dc6cd58bb5f9bbc8d1a3e0f13d40c798914a9224f164d4d46f896
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:^0.72.0":
   version: 0.72.0
   resolution: "@react-native/assets-registry@npm:0.72.0"
@@ -6155,6 +6165,7 @@ __metadata:
     "@babel/runtime": ^7.20.0
     "@callstack/repack": ^3.4.0
     "@react-native-community/masked-view": ^0.1.11
+    "@react-native-masked-view/masked-view": ^0.2.9
     "@react-native/eslint-config": ^0.72.2
     "@react-native/metro-config": ^0.72.11
     "@react-navigation/native": ^6.1.7

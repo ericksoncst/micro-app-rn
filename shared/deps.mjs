@@ -32,6 +32,11 @@ const deps = {
         eager: true,
         singleton: true,
         requiredVersion: '^6.3.17'
+      },
+      'react-query': {
+        eager: true,
+        singleton: true,
+        requiredVersion: '^3.39.3'
       }
 }
 
