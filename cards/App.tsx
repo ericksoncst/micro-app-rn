@@ -21,6 +21,7 @@ Loading data ...
     <SafeAreaView>
       <Text>Welcome to cards</Text>
       <Button title='Go to account' onPress={() => props.navigation.goBack()} />
+      <Button title='Go to Remote Screen' onPress={() => props.navigation.navigate('Remote')} />
       <Text>{data?.forks_count}</Text>
 
     </SafeAreaView>

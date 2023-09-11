@@ -11,6 +11,7 @@ const resolveURL = Federated.createURLResolver({
   containers: {
     account: 'http://localhost:8083/[name][ext]',
     cards: 'http://localhost:8084/[name][ext]',
+    rbundle: 'https://github.com/ericksoncst/remote_bundle/releases/download/rbundle-android@2.0.1/[name][ext]',
   },
 });
 
